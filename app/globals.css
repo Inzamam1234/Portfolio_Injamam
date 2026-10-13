@@ -389,6 +389,7 @@ body::before{content:"";position:fixed;left:0;top:0;z-index:150;width:var(--scro
 /* Mobile navigation polish: a compact toolbar with a calm, themed menu panel. */
 @media(max-width:760px){
   .navigation{
+    display:block;
     background:rgba(255,255,255,.92);
     border-bottom:1px solid #e8e4f1;
     box-shadow:0 8px 22px rgba(45,32,82,.06);
@@ -442,6 +443,8 @@ body::before{content:"";position:fixed;left:0;top:0;z-index:150;width:var(--scro
   .menu-toggle[aria-expanded="true"]{background:var(--purple);border-color:var(--purple);color:#fff;box-shadow:0 7px 16px rgba(104,72,220,.22)}
   .menu-toggle svg{width:19px;height:19px}
   .nav-links.is-open{
+    display:grid;
+    width:100%;
     padding:10px 14px 14px;
     border-top:1px solid #eeeaf5;
     background:rgba(255,255,255,.96);
